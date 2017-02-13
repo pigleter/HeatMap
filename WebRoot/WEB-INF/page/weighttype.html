@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/easyui.css">
+<link rel="stylesheet" type="text/css" href="/css/panel.css">
+<link rel="stylesheet" type="text/css" href="/css/icon.css">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/js/echarts.js"></script>
+<script type="text/javascript" src="/js/custom/weighttype.js"></script>
+</head>
+<body class="easyui-layout">
+	
+	<div id="tt" class="easyui-tabs" data-options="onSelect:function(title,index){showWeightTypeData(index);}">
+	    <div title="货品ABC" style="padding:20px;display:none;">
+	        <div id="p1" class="easyui-panel" style="width:300px;" data-options="border:false">
+				<table id="dg_weighttype_item" class="easyui-datagrid">
+				</table>
+			</div>
+	    </div>
+	    <div title="库位ABC" style="overflow:auto;padding:20px;display:none;">
+	        <div id="p2" class="easyui-panel" style="width:300px;" data-options="border:false">
+				<table id="dg_weighttype_loc" class="easyui-datagrid">
+				</table>
+			</div>
+	    </div>
+	</div>
+</body>
+</html>
