@@ -16,6 +16,10 @@ public class HeatMapController extends Controller {
 		render("/WEB-INF/page/weighttype.html");
 	}
 	
+	public void HeatMap(){
+		render("/WEB-INF/page/heatmap.html");
+	}
+	
 	public void GetWeightTypeItem(){
 		List<WeightTypeItem> wt = WeightTypeItem.dao.find("select * from z_heatmap_weighttype_item");
 		renderJson(wt);
